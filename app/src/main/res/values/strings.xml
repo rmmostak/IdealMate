@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ideal Mate</string>
+    <string name="title_home">Home</string>
+    <string name="title_loves">Loves</string>
+    <string name="title_matches">Matches</string>
+    <string name="title_profile">Profile</string>
+</resources>
