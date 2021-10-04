@@ -1,19 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.loves.LovesFragment">
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="60dp"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2 likes waiting"
+                        android:padding="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/white" />
 
-    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Upgrade to see them all"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
 
-</ScrollView>
+                </LinearLayout>
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20dp"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:text="Upgrade"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/white"
+                        android:textColor="@color/purple_700" />
+
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:text="Like You"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:text="Your Likes"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:padding="5dp"
+                    android:text="Likes (2)"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:text="See all"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="false"
+                    android:textColor="@color/purple_700"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_account" />
+
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_account" />
+
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_account" />
+
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/likesList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@color/transparent"
+                android:padding="5dp"
+                android:text="Intros"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_love" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Your incoming messages\n will appear here."
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

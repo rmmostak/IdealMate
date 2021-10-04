@@ -21,11 +21,11 @@
         android:id="@+id/navigation_matches"
         android:name="com.rmproduct.idealmate.ui.matches.MatchesFragment"
         android:label="@string/title_matches"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_matches" />
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.rmproduct.idealmate.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_loves" />
+        tools:layout="@layout/fragment_profile" />
 </navigation>
